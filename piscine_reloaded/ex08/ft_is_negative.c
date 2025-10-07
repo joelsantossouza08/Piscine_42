@@ -6,16 +6,16 @@
 /*   By: joesanto <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/27 11:08:45 by joesanto          #+#    #+#             */
-/*   Updated: 2025/08/27 11:14:58 by joesanto         ###   ########.fr       */
+/*   Updated: 2025/10/07 16:36:28 by joesanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	ft_putchar(char c);
 
 void	ft_is_negative(int n)
 {
 	if (n < 0)
-		write(1, "N", 1);
+		ft_putchar('N');
 	else
-		write(1, "P", 1);
+		ft_putchar('P');
 }
