@@ -6,16 +6,18 @@
 /*   By: joesanto <joesanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/05 10:42:26 by joesanto          #+#    #+#             */
-/*   Updated: 2025/10/08 15:38:13 by joesanto         ###   ########.fr       */
+/*   Updated: 2025/10/08 15:48:12 by joesanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_count_if(char **tab, int length, int (*f)(char*))
+int	ft_count_if(char **tab, int (*f)(char*))
 {
 	int	count_if;
 
+	if (!tab || !f)
+		return (0);
 	count_if = 0;
-	while (length--)
+	while (*tab)
 		if (f(*tab++))
 			count_if++;
 	return (count_if);
