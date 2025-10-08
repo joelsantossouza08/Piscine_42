@@ -6,13 +6,13 @@
 /*   By: joesanto <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/29 21:35:05 by joesanto          #+#    #+#             */
-/*   Updated: 2025/08/29 21:41:29 by joesanto         ###   ########.fr       */
+/*   Updated: 2025/10/08 15:58:12 by joesanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_recursive_factorial(int nb)
 {
-	if (nb < 0)
+	if (nb < 0 || nb > 12)
 		return (0);
 	if (nb == 0 || nb == 1)
 		return (1);
